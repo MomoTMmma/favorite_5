@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>{{ f }}</h1>
+    <h2>{{ g }}</h2>
+<div class="container">
+    <div class="row" >
+        {% for p in pokemon %}
+        <div class="col-6"></div>
+        <p>Name: {{ p.name }}</p>
+        <h6>Ability: {{ p["ability"] }}</h6>
+        <button class="btn btn-outline-success" type="submit">Sign in</button>
+        <button class="btn btn-outline-success" type="submit">Login</button>
+    </div>
+    {% endfor %}
+</div>
+
+<div></div>
+
+
+{% endblock %}
